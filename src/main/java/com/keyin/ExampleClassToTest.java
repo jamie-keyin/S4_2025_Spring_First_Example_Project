@@ -5,6 +5,6 @@ public class ExampleClassToTest {
         if (stringToSearch == null) return false;
         if (stringToFind == null) return false;
 
-        return stringToSearch.contains(stringToFind);
+        return stringToSearch.toLowerCase().contains(stringToFind.toLowerCase());
     }
 }

@@ -10,5 +10,7 @@ public class ExampleCallToTestTest {
 
         Assertions.assertTrue(exampleClassToTestUnderTest.containsString("Unit Testing", "Testing"));
         Assertions.assertTrue(exampleClassToTestUnderTest.containsString("Unit Testing", "testing"));
+
+        Assertions.assertFalse(exampleClassToTestUnderTest.containsString("Unit Testing", null));
     }
 }

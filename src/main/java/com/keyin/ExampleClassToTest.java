@@ -2,6 +2,9 @@ package com.keyin;
 
 public class ExampleClassToTest {
     public boolean containsString(String stringToSearch, String stringToFind) {
-        return stringToSearch.contains(stringToFind);
+        if (stringToSearch == null) return false;
+        if (stringToFind == null) return false;
+
+        return stringToSearch.toLowerCase().contains(stringToFind.toLowerCase());
     }
 }
